@@ -1,0 +1,87 @@
+/* RESET */
+*{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.bg-barra{
+    background-color: rgb(228, 167, 98);
+}
+.menu{
+    display: flex;
+    
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.banner{
+    width: 800px;
+    height: 300px;
+}
+.menu-navegacion{
+    grid-area: menu;
+    grid-row: 1/4;
+}
+.galeria{
+    grid-area: galeria;
+
+}
+.grid_conteiner{
+   display: grid;
+   grid-template-columns: 33% 33% 33%;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-areas: 
+   "menu menu menu"
+   "galeria galeria galeria"
+   "pie pie pie"
+
+
+   
+}
+
+
+
+.pie{
+    grid-area: pie;
+    
+}
+
+img{
+    width: 50%;
+    height: 50%;
+}
+
+@media (min-width: 300px) and (max-width: 576px){
+
+    .grid_conteiner{
+        background-color: rgb(79, 74, 74)
+    }
+}
+
+
+.galeria{
+    display: flex;
+    flex-flow:row;
+    justify-content:space-around;
+    
+}
+
+.logo{
+    justify-content: center ;
+    width: 50px;
+}
+.turbo{
+    width: 25%;
+}
+nav ul a {
+    padding: 5px;
+}
+
+
+footer {
+    height: 10px;
+}
+
+
+footer a { 
+    padding: 5px;
+}
