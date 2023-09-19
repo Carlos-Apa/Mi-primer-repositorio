@@ -11,24 +11,61 @@
     
     justify-content: center;
     justify-content: space-around;
+    
 }
+
+.grid_conteiner2{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr 0.3fr;
+    grid-template-areas: 
+    "menu menu menu"
+    "galeria galeria galeria"
+    "pie pie pie"
+     
+ }
+
+
+ 
+
+.container-fluid{
+    display: flex;
+    flex-wrap:inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 .banner{
     width: 800px;
     height: 300px;
 }
-.menu-navegacion{
-    grid-area: menu;
-    grid-row: 1/4;
+
+
+.logo{
+      width: 15%;
+      height: 15%;
 }
+    
+
 .galeria{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding: 2rem 0 3rem;
+}
+
+.galeria{
+    
     grid-area: galeria;
+
+
 
 }
 .grid_conteiner{
    display: grid;
    grid-template-columns: 33% 33% 33%;
-   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 0.3fr;
    grid-template-areas: 
    "menu menu menu"
    "galeria galeria galeria"
@@ -38,17 +75,25 @@
    
 }
 
+.menu-navegacion{
+    grid-area: menu;
+}
 
+.img{
+    width: 20%;
+    height: 20%;
+}
+
+.carousel-slide{
+    grid-area: galeria;
+}
 
 .pie{
     grid-area: pie;
     
 }
 
-img{
-    width: 50%;
-    height: 50%;
-}
+
 
 @media (min-width: 300px) and (max-width: 576px){
 
@@ -62,17 +107,28 @@ img{
    "pie "
         
     }
-
+}
 .productos_galeria1 img{
-    width: 4rem;
-}    
+    width: 12rem;
+    height: 12rem;
+}
+
+
+.pie{
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    height: 10rem;
+}
 
 .productos_galeria2 img{
-    width: 4rem;
+    width: 12rem;
+    height: 12rem;
 }    
 
 .productos_galeria3 img{
-    width: 4rem;
+    width: 12rem;
+    height: 12rem;
 }    
 
 .galeria_button{
@@ -90,10 +146,7 @@ img{
     
 }
 
-.logo{
-    justify-content: center ;
-    width: 50px;
-}
+
 .turbo{
     width: 25%;
 }

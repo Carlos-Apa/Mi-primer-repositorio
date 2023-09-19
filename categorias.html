@@ -12,7 +12,8 @@
 </head>
 
 <body>
-    <header>
+  <div class="grid_conteiner2">
+    <header  class="menu-navegacion">
        <nav class="navbar navbar-expand-lg bg-barra">
          <div class="container-fluid">
           <a class="navbar-brand" href="./index.html">
@@ -50,31 +51,31 @@
          </div>
        </nav>
      </header>
-</body>
 
-<div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./Image/turbina.jpg" class="d-block w-50" alt="Turbo">
+
+     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./Image/turbina2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./Image/nos.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./Image/Fuel Tech FT600 EFI.jpg" class="d-block w-100" alt="...">
+        </div>
       </div>
-      <div class="carousel-item">
-         <img src="./Image/nos.jpg" class="d-block w-20" alt="Nitro">
-      </div>
-      <div class="carousel-item">
-        <img src="./Image/Fuel Tech FT600 EFI.jpg" class="d-block w-50" alt="ECU">
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
-     <footer>
+     <footer class="pie">
         <div>
           <a href="facebook">Facebook</a>
           <a href="instagram">Instagram</a>
@@ -84,6 +85,6 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
- </body>
+</div>
 </body>
 </html>    
