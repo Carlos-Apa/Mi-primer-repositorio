@@ -4,7 +4,7 @@
 }
 
 .bg-barra{
-    background-color: rgb(228, 167, 98);
+    background-color: rgba(150, 149, 147, 0.664);
 }
 .menu{
     display: flex;
@@ -14,10 +14,38 @@
     
 }
 
+.grid_conteiner5{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 0.2fr 2.5fr 1fr;
+    grid-template-areas: 
+    "menu menu menu"
+    "galeria galeria galeria"
+    "pie pie pie"
+     
+ }
+ .galeria5{
+  
+    grid-area: galeria;
+}
+
+.pie5{
+    grid-area: pie;
+    margin-top: 185px;
+}
+
+.menu-navegacion5{
+    grid-area: menu;
+}
+
+.galeria5 p{
+    margin-top: 150px;
+}
+
 .grid_conteiner2{
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 1fr 1fr 0.3fr;
+    grid-template-rows: 0.2fr 4fr 0.3fr;
     grid-template-areas: 
     "menu menu menu"
     "galeria galeria galeria"
@@ -37,22 +65,60 @@
 
 
 .banner{
-    width: 800px;
-    height: 300px;
+    background-image: url('../Image/banner.jpg');
+    background-position: center;
+    width: 100%;
+    height: 30vh;
 }
 
+.banner h2{
+    font-size: 5em;
+    color: rgb(255 255 255 / 41%);
+    top: 60%;
+    position: relative;
+}
 
 .logo{
       width: 15%;
       height: 15%;
 }
+
+.titulo h1{
+    padding: 40px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+
+.carousel{
+    display: flex;
+    width: 500px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    margin: 0%;
+    padding: 0%;
     
+}
+
+.carousel-item{
+    width: 500px;
+    height: 450px;
+}
+
+.carousel-item img{
+    width: 90%;
+
+}
+
 
 .galeria{
     display: flex;
     flex-flow: wrap;
     justify-content: center;
-    padding: 2rem 0 3rem;
+    padding: 7rem 0 7rem;
+
 }
 
 .galeria{
@@ -65,18 +131,17 @@
 .grid_conteiner{
    display: grid;
    grid-template-columns: 33% 33% 33%;
-   grid-template-rows: 1fr 1fr 0.3fr;
+   grid-template-rows: 0.2fr 4fr 0.3fr;
    grid-template-areas: 
    "menu menu menu"
    "galeria galeria galeria"
    "pie pie pie"
-
-
-   
+ 
 }
 
 .menu-navegacion{
     grid-area: menu;
+
 }
 
 .img{
