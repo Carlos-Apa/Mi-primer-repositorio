@@ -29,6 +29,10 @@
     grid-area: galeria;
 }
 
+.video{
+    justify-content: center;
+}
+
 .pie5{
     grid-area: pie;
     margin-top: 185px;
@@ -38,6 +42,11 @@
     grid-area: menu;
 }
 
+.logoinst{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .galeria5 p{
     margin-top: 150px;
 }
@@ -89,7 +98,10 @@
     font-size: xx-large;
 }
 
-
+.videoinfo{
+    display: flex;
+    justify-content: center;
+}
 
 .carousel{
     display: flex;
@@ -101,37 +113,69 @@
     padding: 0%;
     
 }
+.carousel-slide{
+    display: flex;
+    justify-content: center;
+    overflow: inherit;
+}
+
+
+.carousel-inner{
+    display: flex;
+    justify-content: space-around;
+    overflow: inherit;
+
+}
 
 .carousel-item{
-    width: 500px;
-    height: 450px;
+    width: 400px;
+    height: 350px;
 }
 
 .carousel-item img{
-    width: 90%;
+    width: 80%;
 
 }
-
 
 .galeria{
     display: flex;
     flex-flow: wrap;
     justify-content: center;
-    padding: 7rem 0 7rem;
-
+    padding: 2rem 0 3rem;
 }
 
 .galeria{
     
     grid-area: galeria;
 
+}
 
+.productos_galeria{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 14rem;
 
 }
+
+
+.productos_galeria img{
+    width: 12rem;
+    height: 12rem;
+}    
+
+.galeria_button{
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+
+}
+
+
 .grid_conteiner{
    display: grid;
    grid-template-columns: 33% 33% 33%;
-   grid-template-rows: 0.2fr 4fr 0.3fr;
+   grid-template-rows: 0.2fr 3fr 0.3fr;
    grid-template-areas: 
    "menu menu menu"
    "galeria galeria galeria"
@@ -165,18 +209,17 @@
     .grid_conteiner{
         background-color: rgb(79, 74, 74);
         grid-template-columns: 1fr;
-   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-rows: 0.1fr 1fr 0.1fr;
    grid-template-areas: 
    "menu "
    "galeria"
    "pie "
         
     }
+
+    
 }
-.productos_galeria1 img{
-    width: 12rem;
-    height: 12rem;
-}
+
 
 
 .pie{
@@ -186,30 +229,6 @@
     height: 10rem;
 }
 
-.productos_galeria2 img{
-    width: 12rem;
-    height: 12rem;
-}    
-
-.productos_galeria3 img{
-    width: 12rem;
-    height: 12rem;
-}    
-
-.galeria_button{
-    background-color: red;
-    color: white;
-    border: 2px solid black;
-
-}
-
-
-.galeria{
-    display: flex;
-    flex-flow:row;
-    justify-content:space-around;
-    
-}
 
 
 .turbo{
