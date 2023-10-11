@@ -1,6 +1,7 @@
 /* RESET */
 *{
     font-family: 'Bebas Neue', sans-serif;
+    color: antiquewhite;
 }
 
 .bg-barra{
@@ -14,16 +15,26 @@
     
 }
 
+.fondo{
+    background-image: url('../Image/Backgraund5.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+
 .grid_conteiner5{
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 0.2fr 2.5fr 1fr;
+    grid-template-columns: 33.3% 33.3% 33.3%; 
+    grid-template-rows: 0.3fr 1.1fr 2.5fr 0.3fr;
     grid-template-areas: 
     "menu menu menu"
+    "logo logo logo"
     "galeria galeria galeria"
     "pie pie pie"
      
  }
+
+
  .galeria5{
   
     grid-area: galeria;
@@ -43,27 +54,53 @@
 }
 
 .logoinst{
+    grid-area: logo;
+}
+
+.logoinst{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .galeria5 p{
-    margin-top: 150px;
+    font-size: x-large;
+    margin-top: 100px;
+    text-align: center;
+
 }
 
 .grid_conteiner2{
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 0.2fr 4fr 0.3fr;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 0.3fr 0.5fr 3fr 0.3fr;
     grid-template-areas: 
     "menu menu menu"
+    "titulo titulo titulo"
     "galeria galeria galeria"
     "pie pie pie"
      
  }
 
 
- 
+.galeriacontacto{
+    grid-area: galeria;
+}
+
+.galeriacontacto{
+    display: flex;
+    justify-content: center;
+}
+
+.titulocontacto{
+    grid-area: titulo;
+}
+
+.titulocon h1{
+    padding: 40px;
+    text-align: center;
+    font-size: xxx-large;
+    
+}
 
 .container-fluid{
     display: flex;
@@ -95,7 +132,7 @@
 .titulo h1{
     padding: 40px;
     text-align: center;
-    font-size: xx-large;
+    font-size: xxx-large;
 }
 
 .videoinfo{
@@ -103,37 +140,27 @@
     justify-content: center;
 }
 
-.carousel{
-    display: flex;
-    width: 500px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; 
-    margin: 0%;
-    padding: 0%;
-    
-}
-.carousel-slide{
-    display: flex;
-    justify-content: center;
-    overflow: inherit;
-}
+
 
 
 .carousel-inner{
     display: flex;
-    justify-content: space-around;
-    overflow: inherit;
+    
+    overflow: initial;
 
 }
 
 .carousel-item{
-    width: 400px;
-    height: 350px;
+    width: 1000px;
+    height: 750px;
 }
 
-.carousel-item img{
-    width: 80%;
+
+
+.categoriatitulo h1{
+    padding: 40px;
+    text-align: center;
+    font-size: 80px;
 
 }
 
@@ -160,7 +187,7 @@
 
 
 .productos_galeria img{
-    width: 12rem;
+    width: 14rem;
     height: 12rem;
 }    
 
@@ -174,15 +201,36 @@
 
 .grid_conteiner{
    display: grid;
-   grid-template-columns: 33% 33% 33%;
-   grid-template-rows: 0.2fr 3fr 0.3fr;
+   grid-template-columns: 33.3% 33.3% 33.3%;
+   grid-template-rows: 0.3fr 0.5fr 3fr 0.3fr;
    grid-template-areas: 
    "menu menu menu"
+   "titulo titulo titulo"
    "galeria galeria galeria"
    "pie pie pie"
  
 }
+.tituloc{
+    grid-area: titulo;
+}
+.galeriac{
+    grid-area: galeria;
+}
 
+.galeriac{
+    display: flex;
+    justify-content: center;
+}
+
+.titulop{
+    grid-area: titulo;
+}
+.productostitulo{
+    padding: 40px;
+    text-align: center;
+    font-size: 80px;
+    top: 20%;    
+}
 .menu-navegacion{
     grid-area: menu;
 
@@ -207,16 +255,39 @@
 @media (min-width: 300px) and (max-width: 576px){
 
     .grid_conteiner{
-        background-color: rgb(79, 74, 74);
-        grid-template-columns: 1fr;
-   grid-template-rows: 0.1fr 1fr 0.1fr;
+        
+     grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr 1fr 1fr;
    grid-template-areas: 
    "menu "
+   "titulo"
    "galeria"
    "pie "
         
     }
+    .grid_conteiner2{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "menu "
+        "titulo"
+        "galeria"
+        "pie"
+         
+     }
 
+     .grid_conteiner5{
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 2.5fr 0.3fr;
+        grid-template-areas: 
+        "menu"
+        "logo"
+        "galeria"
+        "pie"
+         
+     }
     
 }
 
